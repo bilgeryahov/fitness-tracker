@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core'
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { TrainingComponent } from './training.component';
 import { CurrentTrainingComponent } from './current-training/current-training.component';
 import { NewTrainingComponent } from './new-training/new-training.component';
@@ -17,13 +16,12 @@ import { TrainingRoutingModule } from './training-routing.module';
         StopTrainingComponent
     ],
     imports: [
-        AngularFirestoreModule,
         SharedModule,
         TrainingRoutingModule
     ],
     exports: [],
     entryComponents: [StopTrainingComponent]
 })
-export class TraningModule {
+export class TrainingModule {
 
 }
